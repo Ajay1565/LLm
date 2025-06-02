@@ -8,6 +8,7 @@ import Welcome from "./components/Welcome";
 import Result from "./components/Result";
 import Questionnaire from "./components/Questionnaire";
 import Profile from "./components/Profile";
+import Settings from "./components/Settings";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/result" element={<Result />} />
         <Route path="/questionnaire" element={<Questionnaire />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/settings" element={<Settings />} />
       </Routes>
     </BrowserRouter>
   );

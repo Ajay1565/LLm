@@ -61,6 +61,13 @@ const Profile = () => {
 
         <div className="mt-8 space-y-4">
           <button
+            onClick={() => navigate('/settings')}
+            className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300"
+          >
+            Settings
+          </button>
+          
+          <button
             onClick={() => navigate('/questionnaire')}
             className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300"
           >
