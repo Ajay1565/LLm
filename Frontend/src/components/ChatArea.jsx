@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaPlus, FaSearch, FaLightbulb } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { IoMdSettings } from "react-icons/io";
 import { CiLogout } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
@@ -15,6 +15,8 @@ const ChatArea = () => {
       text: "Brain tumor segmentation is the process of identifying and labeling tumor regions in brain MRI scans using AI.",
     },
   ]);
+
+  const navigate = useNavigate();
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
@@ -115,8 +117,6 @@ const ChatArea = () => {
               </div>
             </div>
           ))}
-
-          {/* Prompt cards */}
         </div>
       </div>
 
